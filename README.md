@@ -29,7 +29,10 @@ docker run \
   rootproject/root bash
 
 g++ -o fft2d fft2d.cpp `root-config --cflags --glibs`
-./pend
+./fft2d
+
+g++ -o fft fft.cpp `root-config --cflags --glibs`
+./fft
 
 ```
 
